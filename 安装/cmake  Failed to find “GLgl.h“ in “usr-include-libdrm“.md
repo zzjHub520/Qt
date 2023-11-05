@@ -3,7 +3,8 @@
 解决办法：
 
 ```sh
-sudo yum install mesa-libGL-devel mesa-libGLU-devel
+sudo yum install mesa-libGL-devel mesa-libGLU-devel -y
+sudo apt install mesa-common-dev libglu1-mesa-dev -y
 ```
 
 然后删除 CMakeCache.txt，继续执行 ./bootstrap。
